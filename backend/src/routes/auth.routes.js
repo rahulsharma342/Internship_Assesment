@@ -1,7 +1,7 @@
 import express from "express";
 import { register, login, getMe } from "../controllers/auth.controller.js";
 import { protect } from "../middleware/auth.middleware.js";
-import { loginLimiter, registerLimiter } from "../middleware/ratelimiter.js";
+import { loginLimiter, registerLimiter } from "../middleware/rateLimiter.js";
 import {
   registerValidator,
   loginValidator,
